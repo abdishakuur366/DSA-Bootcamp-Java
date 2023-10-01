@@ -1,0 +1,755 @@
+         //1. Area Of Circle Java Program
+        int radius;
+        double PI = 3.142, area;
+        radius = 5;
+        area = PI * radius*radius;
+        System.out.println("Area of circle is: "+area);
+
+        //2. Area Of Triangle
+        double high=6.7;
+        double base=2.8;
+        double area_of_triangle=(high*base)/2;
+        System.out.println("Area of triangle is: "+ area_of_triangle);
+
+        //3. Area Of Rectangle Program
+        int width=5;
+        int height=10;
+        int area_of_rectangle=width*height;
+        System.out.println("Area of rectangle="+area_of_rectangle);
+
+        //4. Area Of Isosceles Triangle
+        Scanner s= new Scanner(System.in);
+
+        System.out.println("Enter the length of same sided");
+
+        double a= s.nextDouble();
+
+        System.out.println("Enter the side2 of the Triangle");
+
+        double b= s.nextDouble();
+
+        double  Area_OfIsosceles_Triangle=(b/4)*Math.sqrt((4*a*a)-(b*b));
+
+        System.out.println("Area of Isosceles Triangle is: " + Area_OfIsosceles_Triangle);
+
+        //5. Area Of Parallelogram
+        int base=4;
+        int height=18;
+        int area_parallelogram=base*height;
+        System.out.println("Area of the parallelogram="+area_parallelogram);
+
+        //6. Area Of Rhombus
+        int d1 = 20;
+        int d2 = 40;
+        int Area_of_rhombus= ( d1 * d2 ) / 2;
+        System.out.println("The Area of a rhombus is: "+Area_of_rhombus);
+
+        //7. Area Of Equilateral Triangle
+        float a = 5 ;
+        double area = ( 1.73 * a*a) / 4 ;
+        System.out.println("Area of Equilateral Triangle is:"+area);
+
+        //8. Perimeter Of Circle
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the radius of the circle: ");
+        double radius = scanner.nextDouble();
+
+        double perimeter = 2 * Math.PI * radius;
+
+        System.out.println("Perimeter of the circle: " + perimeter);
+
+        //9. Perimeter Of Equilateral Triangle
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of the side of the equilateral triangle: ");
+        double sideLength = scanner.nextDouble();
+
+        double perimeter = 3 * sideLength;
+
+        System.out.println("Perimeter of the equilateral triangle: " + perimeter);
+
+        //10. Perimeter Of Parallelogram
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of side 1 of the parallelogram: ");
+        double side1 = scanner.nextDouble();
+
+        System.out.print("Enter the length of side 2 of the parallelogram: ");
+        double side2 = scanner.nextDouble();
+
+        double perimeter = 2 * (side1 + side2);
+
+        System.out.println("Perimeter of the parallelogram: " + perimeter);
+
+        //11. Perimeter Of Rectangle
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of the rectangle: ");
+        double length = scanner.nextDouble();
+
+        System.out.print("Enter the width of the rectangle: ");
+        double width = scanner.nextDouble();
+
+        double perimeter = 2 * (length + width);
+
+        System.out.println("Perimeter of the rectangle: " + perimeter);
+
+        //12. Perimeter Of Square
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of the side of the square: ");
+        double sideLength = scanner.nextDouble();
+
+        double perimeter = 4 * sideLength;
+
+        System.out.println("Perimeter of the square: " + perimeter);
+
+        //13. Perimeter Of Rhombus
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of the side of the rhombus: ");
+        double sideLength = scanner.nextDouble();
+
+        double perimeter = 4 * sideLength;
+
+        System.out.println("Perimeter of the rhombus: " + perimeter);
+
+        //14. Volume Of Cone Java Program
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the radius of the cone: ");
+        double radius = scanner.nextDouble();
+
+        System.out.print("Enter the height of the cone: ");
+        double height = scanner.nextDouble();
+
+        double volume = (1.0 / 3.0) * Math.PI * Math.pow(radius, 2) * height;
+
+        System.out.println("Volume of the cone: " + volume);
+
+        //15. Volume Of Prism
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the area of the base of the prism: ");
+        double baseArea = scanner.nextDouble();
+
+        System.out.print("Enter the height of the prism: ");
+        double height = scanner.nextDouble();
+
+        double volume = baseArea * height;
+
+        System.out.println("Volume of the prism: " + volume);
+
+        //16. Volume Of Cylinder
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the radius of the cylinder: ");
+        double radius = scanner.nextDouble();
+
+        System.out.print("Enter the height of the cylinder: ");
+        double height = scanner.nextDouble();
+
+        double volume = Math.PI * Math.pow(radius, 2) * height;
+
+        System.out.println("Volume of the cylinder: " + volume);
+
+        //17. Volume Of Sphere
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the radius of the sphere: ");
+        double radius = scanner.nextDouble();
+
+        double volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+
+        System.out.println("Volume of the sphere: " + volume);
+
+        //18. Volume Of Pyramid
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the area of the base of the pyramid: ");
+        double baseArea = scanner.nextDouble();
+
+        System.out.print("Enter the height of the pyramid: ");
+        double height = scanner.nextDouble();
+
+        double volume = (1.0 / 3.0) * baseArea * height;
+
+        System.out.println("Volume of the pyramid: " + volume);
+
+        //19. Curved Surface Area Of Cylinder
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the radius of the cylinder: ");
+        double radius = scanner.nextDouble();
+
+        System.out.print("Enter the height of the cylinder: ");
+        double height = scanner.nextDouble();
+
+        double curvedSurfaceArea = 2 * Math.PI * radius * height;
+
+        System.out.println("Curved Surface Area of the cylinder: " + curvedSurfaceArea);
+
+        //20. Total Surface Area Of Cube
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of the side of the cube: ");
+        double sideLength = scanner.nextDouble();
+
+        double surfaceArea = 6 * Math.pow(sideLength, 2);
+
+        System.out.println("Total Surface Area of the cube: " + surfaceArea);
+
+        //21. Fibonacci Series In Java Programs
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of terms in the Fibonacci series: ");
+        int n = scanner.nextInt();
+
+        System.out.println("Fibonacci Series:");
+
+        // First two terms of the Fibonacci series
+        int firstTerm = 0;
+        int secondTerm = 1;
+        System.out.print(firstTerm + " " + secondTerm + " ");
+
+        // Generate the Fibonacci series
+        for (int i = 3; i <= n; i++) {
+            int nextTerm = firstTerm + secondTerm;
+            System.out.print(nextTerm + " ");
+
+            // Update the firstTerm and secondTerm for the next iteration
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+        }
+
+        //22. subtractProductAndSum
+        public int subtractProductAndSum(int n) {
+            int sum = 0;
+            int product = 1;
+            while(n > 0){
+                int rem = n%10;
+                sum+=rem;
+                product*=rem;
+                n/=10;
+            }
+            return product-sum;
+        }
+
+        //23. Input a number and print all the factors of that number (use loops).
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a positive integer: ");
+        int number = scanner.nextInt();
+
+        System.out.println("Factors of " + number + ":");
+
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                System.out.println(i);
+            }
+        }
+
+        //24. Take integer inputs till the user enters 0 and print the sum of all numbers
+        //(HINT: while loop)
+        Scanner scanner = new Scanner(System.in);
+
+        int sum = 0;
+        int number;
+
+        System.out.println("Enter numbers (enter 0 to stop):");
+
+        number = scanner.nextInt();
+        while (number != 0) {
+            sum += number;
+            number = scanner.nextInt();
+        }
+
+        System.out.println("Sum of the numbers: " + sum);
+
+
+    //           25. Take integer inputs till the user enters 0 and print the largest number from
+    //           all.
+        Scanner scanner = new Scanner(System.in);
+
+        int largest = Integer.MIN_VALUE;
+        int number;
+
+        System.out.println("Enter numbers (enter 0 to stop):");
+
+        number = scanner.nextInt();
+        while (number != 0) {
+            if (number > largest) {
+                largest = number;
+            }
+            number = scanner.nextInt();
+        }
+
+        System.out.println("Largest number: " + largest);
+
+        //26. Addition Of Two Numbers
+        int n1=4, n2=7;
+        int sum = n1+n2;
+        System.out.println(sum);
+        
+        //END OF BASIC QUESTIONS
+        //INTERMEDIATE QUESTIONS
+
+        //1. Factorial Program In Java
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a non-negative integer: ");
+        int number = scanner.nextInt();
+
+        long factorial = 1;
+
+        for (int i = 1; i <= number; i++) {
+            factorial *= i;
+        }
+
+        System.out.println("Factorial of " + number + " is: " + factorial);
+
+        //2. Calculate Electricity Bill
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of kilowatt per hours: ");
+        double kilowatts = scanner.nextDouble();
+
+        System.out.print("Enter the rate per kilowatt: ");
+        double ratePerKilowatt = scanner.nextDouble();
+
+        double billAmount = kilowatts * ratePerKilowatt;
+
+        System.out.println("Electricity bill amount: $" + billAmount);
+
+        //3. Calculate Average Of N Numbers
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the total count of numbers: ");
+        int totalCount = scanner.nextInt();
+        int sum = 0;
+        int number;
+        System.out.println("Enter " + totalCount + " numbers:");
+        for (int i = 1; i <= totalCount; i++) {
+            number = scanner.nextInt();
+            sum += number;
+        }
+        double average = (double) sum / totalCount;
+        System.out.println("Average of the numbers: " + average);
+
+        //4. Calculate Discount Of Product
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the original price of the product: ");
+        double originalPrice = scanner.nextDouble();
+
+        System.out.print("Enter the discount rate (in percentage): ");
+        double discountRate = scanner.nextDouble();
+
+        double discountAmount = originalPrice * (discountRate / 100);
+        double discountedPrice = originalPrice - discountAmount;
+
+        System.out.println("Discount amount: $" + discountAmount);
+        System.out.println("Discounted price: $" + discountedPrice);
+
+        //5. Calculate Distance Between Two Points
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the coordinates of the first point:");
+        System.out.print("x1: ");
+        double x1 = scanner.nextDouble();
+        System.out.print("y1: ");
+        double y1 = scanner.nextDouble();
+
+        System.out.println("Enter the coordinates of the second point:");
+        System.out.print("x2: ");
+        double x2 = scanner.nextDouble();
+        System.out.print("y2: ");
+        double y2 = scanner.nextDouble();
+
+        double distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
+        System.out.println("Distance between the points: " + distance);
+
+        //6. Calculate Commission Percentage
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the commission amount: ");
+        double commissionAmount = scanner.nextDouble();
+
+        System.out.print("Enter the total sales amount: ");
+        double totalSalesAmount = scanner.nextDouble();
+
+        double commissionPercentage = (commissionAmount / totalSalesAmount) * 100;
+
+        System.out.println("Commission percentage: " + commissionPercentage + "%");
+
+        //7. Power In Java
+        double base = 2.0;
+        double exponent = 3.0;
+        double result = Math.pow(base, exponent);
+        System.out.println("Result: " + result);
+
+        //8. Calculate Depreciation of Value
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the initial value: ");
+        double initialValue = scanner.nextDouble();
+
+        System.out.print("Enter the depreciation rate (in percentage): ");
+        double depreciationRate = scanner.nextDouble();
+
+        System.out.print("Enter the time period (in years): ");
+        int timePeriod = scanner.nextInt();
+
+        double depreciationAmount = initialValue * (depreciationRate / 100) * timePeriod;
+        double finalValue = initialValue - depreciationAmount;
+
+        System.out.println("Depreciation amount: $" + depreciationAmount);
+        System.out.println("Final value after depreciation: $" + finalValue);
+
+        //9. Calculate Batting Average
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the total number of runs scored: ");
+        int totalRuns = scanner.nextInt();
+
+        System.out.print("Enter the total number of times dismissed: ");
+        int totalDismissals = scanner.nextInt();
+
+        double battingAverage = (double) totalRuns / totalDismissals;
+
+        System.out.println("Batting Average: " + battingAverage);
+
+        //10. Calculate CGPA Java Program
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the total number of courses: ");
+        int totalCourses = scanner.nextInt();
+
+        double totalCredits = 0.0;
+        double totalGradePoints = 0.0;
+
+        for (int i = 1; i <= totalCourses; i++) {
+            System.out.println("Enter the details for Course " + i + ":");
+            System.out.print("Grade Points: ");
+            double gradePoints = scanner.nextDouble();
+
+            System.out.print("Credit Hours: ");
+            double creditHours = scanner.nextDouble();
+
+            totalGradePoints += gradePoints * creditHours;
+            totalCredits += creditHours;
+        }
+
+        double cgpa = totalGradePoints / totalCredits;
+
+        System.out.println("CGPA: " + cgpa);
+
+        //11. Compound Interest Java Program
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the principal amount: ");
+        double principal = scanner.nextDouble();
+
+        System.out.print("Enter the annual interest rate (in percentage): ");
+        double interestRate = scanner.nextDouble();
+
+        System.out.print("Enter the number of compounding periods per year: ");
+        int compoundingPeriods = scanner.nextInt();
+
+        System.out.print("Enter the number of years: ");
+        int years = scanner.nextInt();
+
+        double interestRatePerPeriod = interestRate / 100 / compoundingPeriods;
+        double amount = principal * Math.pow(1 + interestRatePerPeriod, compoundingPeriods * years);
+        double compoundInterest = amount - principal;
+
+        System.out.println("Compound Interest: " + compoundInterest);
+        System.out.println("Amount after Compound Interest: " + amount);
+
+        //12. Calculate Average Marks
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of subjects: ");
+        int numSubjects = scanner.nextInt();
+
+        int totalMarks = 0;
+
+        for (int i = 1; i <= numSubjects; i++) {
+            System.out.print("Enter the marks for Subject " + i + ": ");
+            int marks = scanner.nextInt();
+
+            totalMarks += marks;
+        }
+
+        double averageMarks = (double) totalMarks / numSubjects;
+
+        System.out.println("Average Marks: " + averageMarks);
+
+        //13. Sum Of N Numbers
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the value of N: ");
+        int N = scanner.nextInt();
+
+        int sum = 0;
+
+        for (int i = 1; i <= N; i++) {
+            System.out.print("Enter number " + i + ": ");
+            int number = scanner.nextInt();
+
+            sum += number;
+        }
+
+        System.out.println("Sum of the numbers: " + sum);
+
+        //14. Armstrong Number In Java
+        int number = 153; // Example number to check
+
+        int originalNumber = number;
+        int numDigits = String.valueOf(number).length();
+        int sum = 0;
+
+        while (number != 0) {
+            int digit = number % 10;
+            sum += Math.pow(digit, numDigits);
+            number /= 10;
+        }
+
+        if (sum == originalNumber) {
+            System.out.println(originalNumber + " is an Armstrong number.");
+        } else {
+            System.out.println(originalNumber + " is not an Armstrong number.");
+        }
+
+        //15. Find Ncr & Npr
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the value of n: ");
+        int n = scanner.nextInt();
+
+        System.out.print("Enter the value of r: ");
+        int r = scanner.nextInt();
+
+        long nCr = calculateCombination(n, r);
+        long nPr = calculatePermutation(n, r);
+
+        System.out.println("Combination (nCr): " + nCr);
+        System.out.println("Permutation (nPr): " + nPr);
+    }
+
+    public static long calculateCombination(int n, int r) {
+        long numerator = calculateFactorial(n);
+        long denominator = calculateFactorial(r) * calculateFactorial(n - r);
+        return numerator / denominator;
+    }
+
+    public static long calculatePermutation(int n, int r) {
+        long numerator = calculateFactorial(n);
+        long denominator = calculateFactorial(n - r);
+        return numerator / denominator;
+    }
+
+    public static long calculateFactorial(int number) {
+        long factorial = 1;
+        for (int i = 1; i <= number; i++) {
+            factorial *= i;
+        }
+        return factorial;
+
+        //16. Reverse A String In Java
+        String originalString = "HI";
+        String reversedString = reverseString(originalString);
+        System.out.println("Reversed String: " + reversedString);
+    }
+    public static String reverseString(String str) {
+        String reversed = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed += str.charAt(i);
+        }
+        return reversed;
+
+        //17. Find if a number is palindrome or not
+        int number = 12321; // Example number to check
+
+        int originalNumber = number;
+        int reversedNumber = 0;
+
+        while (number != 0) {
+            int digit = number % 10;
+            reversedNumber = reversedNumber * 10 + digit;
+            number /= 10;
+        }
+
+        if (originalNumber == reversedNumber) {
+            System.out.println(originalNumber + " is a palindrome.");
+        } else {
+            System.out.println(originalNumber + " is not a palindrome.");
+        }
+
+        //18. Future Investment Value
+        double presentValue = 1000; // Initial investment amount
+        double interestRate = 0.05; // Annual interest rate (5%)
+        int numPeriods = 10; // Number of periods (years)
+
+        double futureValue = presentValue * Math.pow(1 + interestRate, numPeriods);
+
+        System.out.println("Future Value: $" + futureValue);
+
+        //19. HCF Of Two Numbers Program
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        int number1 = input.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int number2 = input.nextInt();
+
+        int hcf = calculateHCF(number1, number2);
+
+        System.out.println("The HCF of " + number1 + " and " + number2 + " is " + hcf);
+    }
+
+    public static int calculateHCF(int num1, int num2) {
+        while (num2 != 0) {
+            int temp = num2;
+            num2 = num1 % num2;
+            num1 = temp;
+        }
+        return num1;
+
+        //20. LCM Of Two Numbers
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        int number1 = input.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int number2 = input.nextInt();
+
+        int lcm = calculateLCM(number1, number2);
+
+        System.out.println("The LCM of " + number1 + " and " + number2 + " is " + lcm);
+    }
+
+    public static int calculateLCM(int num1, int num2) {
+        int gcd = calculateGCD(num1, num2);
+        int product = num1 * num2;
+        int lcm = product / gcd;
+        return lcm;
+    }
+
+    public static int calculateGCD(int num1, int num2) {
+        while (num2 != 0) {
+            int temp = num2;
+            num2 = num1 % num2;
+            num1 = temp;
+        }
+        return num1;
+
+        //21. Java Program Vowel Or Consonant
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a letter: ");
+        char letter = input.next().charAt(0);
+
+        if (isVowel(letter)) {
+            System.out.println(letter + " is a vowel.");
+        } else {
+            System.out.println(letter + " is a consonant.");
+        }
+    }
+
+    public static boolean isVowel(char letter) {
+        letter = Character.toLowerCase(letter);
+
+        if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+            return true;
+        }
+
+        return false;
+
+        //22. Perfect Number In Java
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = input.nextInt();
+
+        int sum = 0;
+
+        for (int i = 1; i <= number / 2; i++) {
+            if (number % i == 0) {
+                sum += i;
+            }
+        }
+
+        if (sum == number) {
+            System.out.println(number + " is a perfect number.");
+        } else {
+            System.out.println(number + " is not a perfect number.");
+        }
+
+        //23. Check Leap Year Or Not
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a year: ");
+        int year = input.nextInt();
+
+        if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
+            System.out.println(year + " is a leap year.");
+        } else {
+            System.out.println(year + " is not a leap year.");
+        }
+
+        //24. Sum Of A Digits Of Number
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = input.nextInt();
+
+        int sum = 0;
+        while (number != 0) {
+            sum += number % 10;
+            number /= 10;
+        }
+
+        System.out.println("The sum of the digits is: " + sum);
+
+        //25. Kunal is allowed to go out with his friends only on the even days of a given month. Write a program to count the number of days he can go out in the month of August.
+        int month = 8; // August
+        int daysInMonth = 31; // Assuming August has 31 days
+
+        int count = 0;
+
+        for (int day = 1; day <= daysInMonth; day++) {
+            if (day % 2 == 0) {
+                count++;
+            }
+        }
+
+        System.out.println("Kunal can go out " + count + " days in the month of August.");
+
+        //26. Write a program to print the sum of negative numbers, sum of positive even numbers and the sum of positive odd numbers from a list of numbers (N) entered by the user. The list terminates when the user enters a zero.
+        Scanner input = new Scanner(System.in);
+        int num;
+        int sumNegative = 0;
+        int sumPositiveEven = 0;
+        int sumPositiveOdd = 0;
+        System.out.print("Enter a number (or 0 to terminate): ");
+        num = input.nextInt();
+        while (num != 0) {
+            if (num < 0) {
+                sumNegative += num;
+            } else if (num > 0) {
+                if (num % 2 == 0) {
+                    sumPositiveEven += num;
+                } else {
+                    sumPositiveOdd += num;
+                }
+            }
+            System.out.print("Enter a number (or 0 to terminate): ");
+            num = input.nextInt();
+        }
+        System.out.println("Sum of negative numbers: " + sumNegative);
+        System.out.println("Sum of positive even numbers: " + sumPositiveEven);
+        System.out.println("Sum of positive odd numbers: " + sumPositiveOdd);
